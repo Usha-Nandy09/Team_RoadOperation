@@ -56,8 +56,9 @@ export default function Home() {
           <Image
             src="/Team_RoadOperation/images/aa-truck.jpg"
             alt="AA Truck"
-            fill
-            className="object-cover"
+            width={1920}
+            height={500}
+            className="object-cover w-full h-full"
             priority
           />
         </div>

@@ -3,7 +3,8 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    remotePatterns: [],
+    loader: 'custom',
+    loaderFile: './src/utils/imageLoader.ts',
   },
   basePath: '/Team_RoadOperation',
   assetPrefix: '/Team_RoadOperation/',

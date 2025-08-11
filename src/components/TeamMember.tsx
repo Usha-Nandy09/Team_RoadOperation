@@ -22,9 +22,9 @@ export default function TeamMember({
         <Image
           src={imageUrl || DEFAULT_IMAGE}
           alt={name}
-          fill
-          className="object-contain"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          width={200}
+          height={200}
+          className="object-contain w-full h-full"
           priority
           onError={(e) => {
             // @ts-ignore
