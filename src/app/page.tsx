@@ -54,7 +54,7 @@ export default function Home() {
       <div className="relative h-[500px]">
         <div className="absolute inset-0">
           <Image
-            src="/images/aa-truck.jpg"
+            src="/Team_RoadOperation/images/aa-truck.jpg"
             alt="AA Truck"
             fill
             className="object-cover"
