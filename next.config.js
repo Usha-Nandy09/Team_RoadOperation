@@ -2,9 +2,7 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
-    loader: 'custom',
-    loaderFile: './src/utils/imageLoader.ts',
+    unoptimized: true
   },
   basePath: '/Team_RoadOperation',
   assetPrefix: '/Team_RoadOperation/',

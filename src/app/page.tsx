@@ -53,13 +53,10 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative h-[500px]">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/Team_RoadOperation/images/aa-truck.jpg"
             alt="AA Truck"
-            width={1920}
-            height={500}
-            className="object-cover w-full h-full"
-            priority
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="absolute inset-0 bg-black/50 z-10" />
