@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aa-yellow: #FFDD00;
+  --aa-blue: #003399;
+  --aa-black: #1C1C1C;
+  --aa-white: #FFFFFF;
+  --aa-pink: #FFB6C1;
+}
+
+body {
+  color: var(--aa-black);
+  background: linear-gradient(135deg, var(--aa-white) 0%, var(--aa-pink) 100%);
+  min-height: 100vh;
+} 
