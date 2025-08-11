@@ -6,6 +6,8 @@
     "dev": "next dev",
     "dev:network": "next dev -H 0.0.0.0",
     "build": "next build",
+    "export": "next export",
+    "deploy": "next build && touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
