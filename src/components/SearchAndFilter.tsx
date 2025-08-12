@@ -1,64 +1,67 @@
-import { useState } from 'react';
-import { Role, Department } from '@/data/team';
+import { Department, Role } from '@/data/team';
 
 interface SearchAndFilterProps {
-  onSearch: (searchTerm: string) => void;
+  onSearch: (term: string) => void;
   onDepartmentFilter: (department: Department | 'all') => void;
   onRoleFilter: (role: Role | 'all') => void;
+  onLocationFilter: (isOffshore: boolean | 'all') => void;
 }
 
 export default function SearchAndFilter({
   onSearch,
   onDepartmentFilter,
-  onRoleFilter
+  onRoleFilter,
+  onLocationFilter
 }: SearchAndFilterProps) {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const departments: Department[] = ['Indoor1', 'Indoor2', 'Outdoor'];
-  const roles: Role[] = ['Programmer Analyst', 'Associate', 'Senior Associate', 'Manager'];
-
   return (
-    <div className="bg-aa-white p-4 rounded-lg shadow-md mb-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {/* Search Input */}
-        <div>
-          <input
-            type="text"
-            placeholder="Search by name, role, or expertise..."
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-aa-blue"
-            value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              onSearch(e.target.value);
-            }}
-          />
-        </div>
+    <div className="mb-8 space-y-4">
+      {/* Search */}
+      <div className="relative">
+        <input
+          type="text"
+          placeholder="Search by name, role, or expertise..."
+          onChange={(e) => onSearch(e.target.value)}
+          className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-aa-blue focus:border-transparent"
+        />
+        <span className="absolute right-3 top-3 text-gray-400">🔍</span>
+      </div>
 
+      {/* Filters */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Department Filter */}
-        <div>
-          <select
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-aa-blue"
-            onChange={(e) => onDepartmentFilter(e.target.value as Department | 'all')}
-          >
-            <option value="all">All Departments</option>
-            {departments.map(dept => (
-              <option key={dept} value={dept}>{dept}</option>
-            ))}
-          </select>
-        </div>
+        <select
+          onChange={(e) => onDepartmentFilter(e.target.value as Department | 'all')}
+          className="p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-aa-blue focus:border-transparent"
+        >
+          <option value="all">All Departments</option>
+          <option value="Indoor1">Indoor1</option>
+          <option value="Indoor2">Indoor2</option>
+          <option value="Outdoor">Outdoor</option>
+          <option value="Automation">Automation</option>
+          <option value="Defect Management">Defect Management</option>
+        </select>
 
         {/* Role Filter */}
-        <div>
-          <select
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-aa-blue"
-            onChange={(e) => onRoleFilter(e.target.value as Role | 'all')}
-          >
-            <option value="all">All Roles</option>
-            {roles.map(role => (
-              <option key={role} value={role}>{role}</option>
-            ))}
-          </select>
-        </div>
+        <select
+          onChange={(e) => onRoleFilter(e.target.value as Role | 'all')}
+          className="p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-aa-blue focus:border-transparent"
+        >
+          <option value="all">All Roles</option>
+          <option value="Programmer Analyst">Programmer Analyst</option>
+          <option value="Associate">Associate</option>
+          <option value="Senior Associate">Senior Associate</option>
+          <option value="Manager">Manager</option>
+        </select>
+
+        {/* Location Filter */}
+        <select
+          onChange={(e) => onLocationFilter(e.target.value === 'all' ? 'all' : e.target.value === 'true')}
+          className="p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-aa-blue focus:border-transparent"
+        >
+          <option value="all">All Locations</option>
+          <option value="true">Offshore</option>
+          <option value="false">Onshore</option>
+        </select>
       </div>
     </div>
   );
