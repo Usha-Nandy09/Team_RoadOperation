@@ -24,7 +24,7 @@ export default function Home() {
         member.role.toLowerCase().includes(search.toLowerCase()) ||
         member.expertise.some(exp => exp.toLowerCase().includes(search.toLowerCase()));
 
-      const matchesDepartment = department === 'all' || member.department === department;
+      const matchesDepartment = department === 'all' || member.departments.includes(department);
       const matchesRole = role === 'all' || member.role === role;
 
       return matchesSearch && matchesDepartment && matchesRole;

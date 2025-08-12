@@ -35,7 +35,7 @@ export default function TeamMember({
       <div className="p-6">
         <h3 className="text-aa-blue text-xl font-bold mb-2">{name}</h3>
         <p className="text-aa-black mb-2">{role}</p>
-        <p className="text-aa-black/80 mb-2">Department: {department}</p>
+        <p className="text-aa-black/80 mb-2">Department: {departments.join(', ')}</p>
         
         <div className="flex items-center gap-2 mb-2">
           <span className="text-aa-black/80">📍 {location}</span>
