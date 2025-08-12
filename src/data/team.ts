@@ -26,7 +26,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: true,
     experience: 6,
     bio: 'An IT professional with 6 years of experience in quality engineering. Expertise in software automation',
-    imageUrl: '/images/team/girl.jpg',
+    imageUrl: '/Team_RoadOperation/images/team/girl.jpg',
     expertise: ['Quality Engineering', 'Software Automation'],
     email: '2333044@cognizant.com',
     teamsName: 'Nandhini, Usha'
@@ -40,7 +40,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: true,
     experience: 6,
     bio: 'An IT professional with 6+ years of experience in quality engineering. Expertise in software automation and Functional testing.',
-    imageUrl: '/images/team/girl.jpg',
+    imageUrl: '/Team_RoadOperation/images/team/girl.jpg',
     expertise: ['Quality Engineering', 'Software Automation', 'Functional Testing'],
     email: '2103594@cognizant.com',
     teamsName: 'Kamble, Pooja'
@@ -54,7 +54,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: true,
     experience: 6,
     bio: 'An IT professional with 6+ years of experience in quality engineering. Expertise in software Functional and automation testing.',
-    imageUrl: '/images/team/boy.png',
+    imageUrl: '/Team_RoadOperation/images/team/boy.png',
     expertise: ['Quality Engineering', 'Software Automation', 'Functional Testing'],
     email: '2198710@cognizant.com',
     teamsName: 'R, Manikandan'
@@ -68,7 +68,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: true,
     experience: 3,
     bio: 'An IT professional with 3 years of experience in quality engineering. Expertise in software automation and Functional testing. Works across both Indoor1 and Indoor2 departments.',
-    imageUrl: '/images/team/boy.png',
+    imageUrl: '/Team_RoadOperation/images/team/boy.png',
     expertise: ['Quality Engineering', 'Software Automation', 'Functional Testing'],
     email: '2140515@cognizant.com',
     teamsName: 'Pendyala, Harsha Vardhan'
@@ -82,7 +82,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: true,
     experience: 6,
     bio: 'An IT professional with 6+ years of experience in quality engineering. Expertise in software automation and Functional testing.',
-    imageUrl: '/images/team/boy.png',
+    imageUrl: '/Team_RoadOperation/images/team/boy.png',
     expertise: ['Quality Engineering', 'Software Automation', 'Functional Testing'],
     email: '2190506@cognizant.com',
     teamsName: 'Krushna, Salve Nayan'
@@ -96,7 +96,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: true,
     experience: 14,
     bio: 'An IT professional with around 14 years of experience in quality engineering including test management, defect management, Agile and waterfall testing. Expertise in managing testing projects and effectively communicating and co-ordinating with the project stakeholders',
-    imageUrl: '/images/team/girl.jpg',
+    imageUrl: '/Team_RoadOperation/images/team/girl.jpg',
     expertise: ['Quality Engineering', 'Test Management', 'Defect Management', 'Agile Testing', 'Project Management'],
     email: '117308@cognizant.com',
     teamsName: 'Seshadri, Sangeetha'
@@ -110,7 +110,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: true,
     experience: 13,
     bio: 'Senior Associate with 13+ years of experience in IT Industry and 10+ years of experience in Software Testing. Experience in Functional, Database and Mainframe testing. Experience in UI automation using Java, Selenium and TestNG. Immense experience in Software Testing Life Cycle and Defect Management.',
-    imageUrl: '/images/team/boy.png',
+    imageUrl: '/Team_RoadOperation/images/team/boy.png',
     expertise: ['Functional Testing', 'DB Testing', 'API Testing', 'Defect Management', 'UI Automation', 'Java', 'Selenium', 'TestNG'],
     email: 'Mohanraj.Marimuthu@cognizant.com',
     teamsName: 'Marimuthu, Mohanraj'
@@ -124,7 +124,7 @@ export const teamMembers: TeamMember[] = [
     isOffshore: false,
     experience: 15,
     bio: '15 years of experience with specialized in Automation and Functional Testing. Expertise in Dev ops, Agile, API testing',
-    imageUrl: '/images/team/boy.png',
+    imageUrl: '/Team_RoadOperation/images/team/boy.png',
     expertise: ['Quality Engineering', 'Automation', 'Functional Testing', 'DevOps', 'Agile', 'API Testing'],
     email: '261763@cognizant.com',
     teamsName: 'Ram, Vishnu'

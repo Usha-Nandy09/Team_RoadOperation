@@ -65,7 +65,7 @@ export default function Home() {
       <div className="relative h-[500px] overflow-hidden">
         <div className="absolute inset-0 truck-animation">
           <img
-            src="/images/aa-truck.jpg"
+            src="/Team_RoadOperation/images/aa-truck.jpg"
             alt="AA Truck"
             className="w-full h-full object-cover"
           />
