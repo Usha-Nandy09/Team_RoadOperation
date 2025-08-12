@@ -6,7 +6,7 @@ const DEFAULT_IMAGE = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ
 export default function TeamMember({
   name,
   role,
-  department,
+  departments,
   location,
   isOffshore,
   experience,
